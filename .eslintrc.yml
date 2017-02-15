@@ -1,0 +1,30 @@
+---
+env:
+  es6: true
+  node: true
+  mocha: true
+extends: airbnb
+parser: babel-eslint
+plugins:
+- import
+- prettier
+rules:
+  comma-dangle:
+  - error
+  - never
+  max-len:
+  - error
+  - 120
+  no-use-before-define:
+  - error
+  - functions: false
+  no-confusing-arrow: off
+  import/prefer-default-export: off
+  import/no-extraneous-dependencies: off
+  react/jsx-filename-extension: off
+  react/forbid-prop-types: off
+  react/require-default-props: off
+  prettier/prettier:
+  - error
+  - printWidth: 120
+    singleQuote: true
