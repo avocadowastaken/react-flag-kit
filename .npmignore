@@ -1,6 +1,6 @@
 src
+doc
 stories
-.out
 .storybook
 
 .babelrc
