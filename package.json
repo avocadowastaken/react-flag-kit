@@ -13,8 +13,7 @@
     "build": "run-s clear build:*",
     "clear": "rimraf ./es ./lib ./docs",
     "build:cjs": "babel src --out-dir ./lib",
-    "build:storybook": "build-storybook -c .storybook -o doc",
-    "deploy:storybook": "gh-pages-travis"
+    "build:docs": "build-storybook -c .storybook -o docs"
   },
   "devDependencies": {
     "@kadira/storybook": "2.35.3",
@@ -33,7 +32,6 @@
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-prettier": "2.0.0",
     "eslint-plugin-react": "6.9.0",
-    "gh-pages-travis": "1.0.4",
     "lodash": "4.17.4",
     "material-ui": "0.17.0",
     "npm-run-all": "4.0.1",
