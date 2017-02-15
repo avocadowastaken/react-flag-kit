@@ -23,7 +23,7 @@ yarn add react-flag-kit -E
 
 ### Usage
 
-If you bundle your app with **Webpack** or **rollup** — you can use `FlagIcon` component:
+If you want to bundle your app with flag icons:
 
 ```javascript
 import FlagIcon from 'react-flag-kit/lib/FlagIcon';
@@ -31,9 +31,7 @@ import FlagIcon from 'react-flag-kit/lib/FlagIcon';
 export default () => <FlagIcon code="WW" size={48} />
 ```
 
-
-
-If you don't, or don't want to bundle tons of flag icons in your bundle directory — you can use `CDNFlagIcon`:
+If you want to use flag icons from CDN: 
 
 ```bash
 import FlagIcon from 'react-flag-kit/lib/CDNFlagIcon.js';
@@ -50,6 +48,12 @@ More advanced examples you can find in [storybook](https://umidbekkarimov.github
 The list of available flags you can find in [FlagKit](https://github.com/madebybowtie/FlagKit#reference) repo.
 
 
+
+### Thanks
+
+[FlagKit](https://github.com/madebybowtie/FlagKit) for awesome collection of flag icons.
+
+[UNPKG](https://unpkg.com) for free and fast CDN.
 
 ### Licence
 
