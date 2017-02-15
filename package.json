@@ -12,11 +12,12 @@
     "lint": "eslint src stories",
     "build": "run-s clear build:cjs",
     "clear": "rimraf ./es ./lib ./docs",
-    "build:storybook": "build-storybook -c .storybook -o docs",
-    "build:cjs": "babel src --out-dir ./lib"
+    "build:cjs": "babel src --out-dir ./lib",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@kadira/storybook": "2.35.3",
+    "@kadira/storybook-deployer": "1.2.0",
     "autoprefixer": "6.7.2",
     "babel-cli": "6.23.0",
     "babel-core": "6.23.1",
