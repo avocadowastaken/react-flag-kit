@@ -8,14 +8,22 @@ before_script:
 - yarn lint
 script:
 - yarn build
-- if [ -n "TRAVIS_TAG" ]; yarn deploy-storybook; fi
 
 deploy:
-  provider: npm
-  skip_cleanup: true
-  email: uma.karimov@gmail.com
-  api_key:
-    secure: fJ1SgeQWT9EV+RzIYdQtPun9m7ybd7mVN0mxZH4gPaLGHDV8lFFaobAGjXqPGtAygm6KYi7CksP0fG/VWlMxUhUlZAKJxIqSmlxY3pv28MwXp57Rp4R9gUA+ucIiV+5xMX+3ZRytppOhV8fcKfpLfRfNn6z9TKzMasT7pbw8RMoaQ70xMmRnENr7RfjZuRGiiS3FTWUcWanns1KLh86UnnPO7ZAsAWGpSweGt4LhkKVN7KaUIj6XFNig9kAlNnLKVB3JU53aK0VYhMHMvE8+YSk6XuO6Z50wYoJZfvdXTcsHpWv31JHA2S8ez+gCdddJHMHN3W+BiiS54n4Q2LoCAHUnFcZWJwucGyD89yVQiTUhCzRHRCqoXJuN7TxkhpoSiESlpZVD3F0LW0r2zPR3rFUlW1h3OpgXmBOJrGbrBh00amBjWR88mvXcTEkMuKgIcWZ2+6rHc9s4YO3cz3gIwH79ZBSPj1LjKsNCAwA0M6X5w9gasefTlTbwIqlRAyf070lAVECtu87L6DyU1F9BQ6P1TXh5PCKO9RVqNEY98dBQX5O25wFIFP4SnDo4PRDH5yvBl08cBjS48RGho/ODOYO8tpo6g3fYIiINl73+gyFR1iEti9H2I9uCti7oI/5Z+ApG5O4TvKKrgLKZnccRFicBm9QwrznEsuLydxmbEDE=
-  on:
-    tags: true
-    repo: umidbekkarimov/react-flag-kit
+  - provider: npm
+    skip_cleanup: true
+    email: uma.karimov@gmail.com
+    api_key:
+      secure: fJ1SgeQWT9EV+RzIYdQtPun9m7ybd7mVN0mxZH4gPaLGHDV8lFFaobAGjXqPGtAygm6KYi7CksP0fG/VWlMxUhUlZAKJxIqSmlxY3pv28MwXp57Rp4R9gUA+ucIiV+5xMX+3ZRytppOhV8fcKfpLfRfNn6z9TKzMasT7pbw8RMoaQ70xMmRnENr7RfjZuRGiiS3FTWUcWanns1KLh86UnnPO7ZAsAWGpSweGt4LhkKVN7KaUIj6XFNig9kAlNnLKVB3JU53aK0VYhMHMvE8+YSk6XuO6Z50wYoJZfvdXTcsHpWv31JHA2S8ez+gCdddJHMHN3W+BiiS54n4Q2LoCAHUnFcZWJwucGyD89yVQiTUhCzRHRCqoXJuN7TxkhpoSiESlpZVD3F0LW0r2zPR3rFUlW1h3OpgXmBOJrGbrBh00amBjWR88mvXcTEkMuKgIcWZ2+6rHc9s4YO3cz3gIwH79ZBSPj1LjKsNCAwA0M6X5w9gasefTlTbwIqlRAyf070lAVECtu87L6DyU1F9BQ6P1TXh5PCKO9RVqNEY98dBQX5O25wFIFP4SnDo4PRDH5yvBl08cBjS48RGho/ODOYO8tpo6g3fYIiINl73+gyFR1iEti9H2I9uCti7oI/5Z+ApG5O4TvKKrgLKZnccRFicBm9QwrznEsuLydxmbEDE=
+    on:
+      tags: true
+      branch: master
+      repo: umidbekkarimov/react-flag-kit
+
+  - provider: script
+    script:
+    - yarn deploy-storybook
+    on:
+      tags: true
+      branch: master
+      repo: umidbekkarimov/react-flag-kit
