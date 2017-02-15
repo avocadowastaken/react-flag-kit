@@ -1,6 +1,6 @@
 {
   "name": "react-flag-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "FlagKit for React",
   "main": "lib/index.js",
   "repository": "https://github.com/umidbekkarimov/react-flag-kit.git",
@@ -10,7 +10,7 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "format": "prettier 'src/**/*.js' 'stories/**/*.js' --write --print-width=120 --single-quote",
     "lint": "eslint src stories",
-    "build": "run-s clear build:*",
+    "build": "run-s clear build:cjs",
     "clear": "rimraf ./es ./lib ./docs",
     "build:storybook": "build-storybook -c .storybook -o docs",
     "build:cjs": "babel src --out-dir ./lib"
