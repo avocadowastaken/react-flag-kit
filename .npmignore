@@ -2,6 +2,7 @@ src
 docs
 stories
 .storybook
+scripts
 
 .babelrc
 .eslintrc.yml
