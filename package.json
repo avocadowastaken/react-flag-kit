@@ -1,6 +1,6 @@
 {
   "name": "react-flag-kit",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "FlagKit for React",
   "main": "lib/index.js",
   "repository": "https://github.com/umidbekkarimov/react-flag-kit.git",
@@ -13,11 +13,12 @@
     "build": "run-s clear build:*",
     "clear": "rimraf ./es ./lib ./docs",
     "build:cjs": "babel src --out-dir ./lib",
-    "build:docs": "build-storybook -c .storybook -o docs"
+    "build:docs": "build-storybook -c .storybook -o docs",
+    "minify:svg": "svgo -f ./src/svg -o ./assets"
   },
   "devDependencies": {
     "@kadira/storybook": "2.35.3",
-    "autoprefixer": "6.7.2",
+    "autoprefixer": "6.7.3",
     "babel-cli": "6.23.0",
     "babel-core": "6.23.1",
     "babel-eslint": "7.1.1",
@@ -31,15 +32,16 @@
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-prettier": "2.0.0",
-    "eslint-plugin-react": "6.9.0",
+    "eslint-plugin-react": "6.10.0",
     "lodash": "4.17.4",
     "material-ui": "0.17.0",
     "npm-run-all": "4.0.1",
-    "prettier": "0.17.1",
+    "prettier": "0.18.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-tap-event-plugin": "2.0.1",
     "rimraf": "2.5.4",
-    "storybook-addon-material-ui": "0.7.7"
+    "storybook-addon-material-ui": "0.7.7",
+    "svgo": "0.7.2"
   }
 }
