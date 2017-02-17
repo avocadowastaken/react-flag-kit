@@ -25,7 +25,9 @@ module.exports = {
         include: root,
         loader: require.resolve('file-loader'),
         query: {
-          name: 'static/media/[name].[ext]'
+          name: (
+            process.env.NODE_ENV === 'development' ? 'static/media/[path][name].[ext]' : 'static/media/[name].[ext]'
+          )
         }
       },
       {
