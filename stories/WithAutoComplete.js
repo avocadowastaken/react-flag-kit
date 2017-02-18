@@ -10,8 +10,9 @@ export default function WithAutoComplete() {
     <StoryCard>
       <AutoComplete
         fullWidth
-        listStyle={{ maxHeight: '256px' }}
         hintText="Select Country"
+        maxSearchResults={8}
+        listStyle={{ maxHeight: '256px' }}
         filter={AutoComplete.caseInsensitiveFilter}
         dataSource={Countries.map(country => ({
           text: country.value,

@@ -1,12 +1,13 @@
 {
   "name": "react-flag-kit",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "FlagKit for React",
   "main": "lib/index.js",
   "repository": "https://github.com/umidbekkarimov/react-flag-kit.git",
   "author": "Umidbek Karimov <uma.karimov@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "all": "run-s format lint build",
     "start": "start-storybook -p 9001 -c .storybook",
     "format": "prettier 'src/**/*.js' 'stories/**/*.js' --write --print-width=120 --single-quote",
     "lint": "eslint src stories",

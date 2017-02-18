@@ -1,20 +1,24 @@
 ---
 env:
   es6: true
-  node: true
-  mocha: true
 extends: airbnb
 parser: babel-eslint
 plugins:
 - import
 - prettier
 rules:
+  arrow-parens:
+  - error
+  - as-needed
   comma-dangle:
   - error
   - never
   max-len:
   - error
-  - 120
+  - code: 120
+    tabWidth: 4
+    ignoreStrings: true
+    ignoreComments: true
   no-use-before-define:
   - error
   - functions: false
@@ -23,7 +27,6 @@ rules:
   import/no-extraneous-dependencies: off
   react/jsx-filename-extension: off
   react/forbid-prop-types: off
-  react/require-default-props: off
   prettier/prettier:
   - error
   - printWidth: 120

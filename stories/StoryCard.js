@@ -9,6 +9,11 @@ StoryCard.propTypes = {
   children: node.isRequired
 };
 
+StoryCard.defaultProps = {
+  style: {},
+  header: null
+};
+
 export default function StoryCard(props) {
   return (
     <Card style={{ maxWidth: '320px', margin: '64px auto 0', ...props.style }}>
