@@ -1,6 +1,6 @@
 {
   "name": "react-flag-kit",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "FlagKit for React",
   "main": "lib/index.js",
   "repository": "https://github.com/umidbekkarimov/react-flag-kit.git",
