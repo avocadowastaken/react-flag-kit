@@ -1,8 +1,8 @@
-import React from 'react';
-import Badge from 'material-ui/Badge';
-import IconButton from 'material-ui/IconButton';
-import StoryCard from './StoryCard';
-import FlagIcon from '../src/FlagIcon';
+import React from "react";
+import Badge from "material-ui/Badge";
+import IconButton from "material-ui/IconButton";
+import StoryCard from "./StoryCard";
+import FlagIcon from "../src/FlagIcon";
 
 export default function WithBadge() {
   return (

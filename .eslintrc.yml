@@ -13,12 +13,8 @@ rules:
   comma-dangle:
   - error
   - never
-  max-len:
-  - error
-  - code: 120
-    tabWidth: 4
-    ignoreStrings: true
-    ignoreComments: true
+  quotes: off
+  max-len: off
   no-use-before-define:
   - error
   - functions: false
@@ -29,5 +25,3 @@ rules:
   react/forbid-prop-types: off
   prettier/prettier:
   - error
-  - printWidth: 120
-    singleQuote: true

@@ -1,13 +1,9 @@
-import React from 'react';
-import Flag from './internal/Flag';
-import CountryCodes from './CountryCodes';
+import { number, oneOf } from "prop-types";
+import React from "react";
+import CountryCodes from "./CountryCodes";
+import Flag from "./internal/Flag";
 
-const { oneOf, number } = React.PropTypes;
-
-FlagIcon.propTypes = {
-  size: number,
-  code: oneOf(CountryCodes).isRequired
-};
+FlagIcon.propTypes = { size: number, code: oneOf(CountryCodes).isRequired };
 
 FlagIcon.defaultProps = { size: 24 };
 

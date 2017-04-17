@@ -1,7 +1,6 @@
-import React from 'react';
-import { Card, CardText, CardHeader } from 'material-ui/Card';
-
-const { node, object } = React.PropTypes;
+import React from "react";
+import { Card, CardText, CardHeader } from "material-ui/Card";
+import { node, object } from "prop-types";
 
 StoryCard.propTypes = {
   header: node,
@@ -9,14 +8,17 @@ StoryCard.propTypes = {
   children: node.isRequired
 };
 
-StoryCard.defaultProps = {
-  style: {},
-  header: null
-};
+StoryCard.defaultProps = { style: {}, header: null };
 
 export default function StoryCard(props) {
   return (
-    <Card style={{ maxWidth: '320px', margin: '64px auto 0', ...props.style }}>
+    <Card
+      style={{
+        maxWidth: "320px",
+        margin: "64px auto 0",
+        ...props.style
+      }}
+    >
       <style
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{

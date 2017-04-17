@@ -1,7 +1,10 @@
-import React from 'react';
-import { BottomNavigation, BottomNavigationItem } from 'material-ui/BottomNavigation';
-import StoryCard from './StoryCard';
-import FlagIcon from '../src/FlagIcon';
+import React from "react";
+import {
+  BottomNavigation,
+  BottomNavigationItem
+} from "material-ui/BottomNavigation";
+import StoryCard from "./StoryCard";
+import FlagIcon from "../src/FlagIcon";
 
 export default class BottomNavigationExampleSimple extends React.Component {
   state = { selectedIndex: 0 };

@@ -1,11 +1,15 @@
-import React from 'react';
-import Avatar from 'material-ui/Avatar';
-import Chip from 'material-ui/Chip';
-import FlagIcon from '../src/FlagIcon';
-import StoryCard from './StoryCard';
+import React from "react";
+import Avatar from "material-ui/Avatar";
+import Chip from "material-ui/Chip";
+import FlagIcon from "../src/FlagIcon";
+import StoryCard from "./StoryCard";
 
 const styles = {
-  chips: { display: 'flex', justifyContent: 'space-between', alignItems: 'center' }
+  chips: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center"
+  }
 };
 
 export default function WithChips() {

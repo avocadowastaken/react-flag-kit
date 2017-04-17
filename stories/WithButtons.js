@@ -1,11 +1,11 @@
-import React from 'react';
-import IconButton from 'material-ui/IconButton';
-import FlatButton from 'material-ui/FlatButton';
-import RaisedButton from 'material-ui/RaisedButton';
+import React from "react";
+import IconButton from "material-ui/IconButton";
+import FlatButton from "material-ui/FlatButton";
+import RaisedButton from "material-ui/RaisedButton";
 
-import FlagIcon from '../src/FlagIcon';
+import FlagIcon from "../src/FlagIcon";
 
-import StoryCard from './StoryCard';
+import StoryCard from "./StoryCard";
 
 const styles = {
   small: {
@@ -18,7 +18,11 @@ const styles = {
   },
 
   storyCard: { maxWidth: 340 },
-  buttons: { display: 'flex', justifyContent: 'space-between', alignItems: 'center' }
+  buttons: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center"
+  }
 };
 export default function WithButtons() {
   return (
@@ -26,7 +30,11 @@ export default function WithButtons() {
       <StoryCard header="Flat Buttons" style={styles.storyCard}>
         <div style={styles.buttons}>
           <FlatButton label="Asia" icon={<FlagIcon code="WW-ASI" />} />
-          <FlatButton label="Africa" labelPosition="before" icon={<FlagIcon code="WW-AFR" />} />
+          <FlatButton
+            label="Africa"
+            labelPosition="before"
+            icon={<FlagIcon code="WW-AFR" />}
+          />
           <FlatButton icon={<FlagIcon code="WW-EUR" />} />
         </div>
       </StoryCard>
@@ -35,7 +43,11 @@ export default function WithButtons() {
         <div style={styles.buttons}>
           <RaisedButton label="Asia" icon={<FlagIcon code="WW-ASI" />} />
 
-          <RaisedButton label="Africa" labelPosition="before" icon={<FlagIcon code="WW-AFR" />} />
+          <RaisedButton
+            label="Africa"
+            labelPosition="before"
+            icon={<FlagIcon code="WW-AFR" />}
+          />
 
           <RaisedButton icon={<FlagIcon code="WW-EUR" />} />
         </div>
