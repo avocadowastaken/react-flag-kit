@@ -4,9 +4,11 @@ import PropTypes from "prop-types";
 import Flag from "./internal/Flag";
 
 /**
- * Draws flag icon loaded with Webpack `url-loader` or `file-loader`.
+ * Draws flag icon required directly in to bundle with
+ * Webpack [loaders](https://webpack.js.org/loaders/#files) or
+ * Rollup [plugins](https://github.com/rollup/rollup/wiki/Plugins#external-file-plugins).
  *
- * Usage:
+ * **Usage:**
  * ```javascript
  * import { FlagIcon } from "react-flag-kit";
  *
