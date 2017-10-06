@@ -6,7 +6,7 @@ import Flag from "./internal/Flag";
 /**
  * Draws flag icon loaded from [unpkg.com](https://unpkg.com).
  *
- * Usage:
+ * **Usage:**
  * ```javascript
  * import { CDNFlagIcon } from "react-flag-kit";
  *
