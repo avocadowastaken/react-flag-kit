@@ -1,16 +1,21 @@
 language: node_js
+
 cache:
   yarn: true
 notifications:
   email: true
-node_js: 7
-before_script:
-- yarn lint
+
+node_js:
+- 8
+
 script:
+- yarn lint
 - yarn build
+
 branches:
   except:
   - gh-pages
+
 deploy:
 - provider: npm
   skip_cleanup: true
@@ -21,14 +26,11 @@ deploy:
     tags: true
     branch: master
     repo: umidbekkarimov/react-flag-kit
-- provider: script
+
+- provider: pages
   skip_cleanup: true
-  script:
-  - bash ./scripts/deploy-docs.sh
+  github_token: $GITHUB_TOKEN
+  local_dir: build
   on:
-    tags: true
     branch: master
     repo: umidbekkarimov/react-flag-kit
-env:
-  global:
-    secure: Bi3bcTPQV5ZS+4rVHqndjuZWS9fT6mao7ZqTtQhgZ/eeRgrvYSmDag0US1dA+odXm/95uU0IDp85Y7wEwDSwMpHXnAoHUAEQ6w8B5UD9+vjNdi2etTNnqdt0I3mjMZn+0bs0VmHX/kwsHAQ+ULAJ4uk89J5YblQa5LJNaKZ858KALfrfqvLevMu+qYmSQbGifhvuw0YkQdLEonbhfwJqeU6Q/ZwfiKTlQ113uLFDhKLz/MbQLHZQFks0YgdLPlGtQWz8Z+aAsX1XhnQHkLgXqiUa4pzSxD5PJ3Myw9kN2YzjRZ73i6DBWdderNP5u3IHviMnAEHihdSTE1ow1ndocFgPcCCIQZVPIF0zKCkywncYJ153tzGVfhH3lg6o4M8fOmU5gXkMm4rIXWTJjkBTVgUDovbDqcY8mUu+Xk4uLIG23X9EmSYCojKBIqktYZlM/ZH9qsHelHdzgE2oPqOHrMqIIn6Cyqt+vWaHWI/xogJLK/sCGgTLT71BxkMhJkNGgdaBK7qqaRzweKEHY9Q4n9kYbgt17JymuTWLo1+T20FSALhHDK7BBcTxx4oYwU1RniEIoDxxu27CkDY0ZyOL4PIsDQwUHI3GdEw9o/XrlR776LRj3R0BfxRtZzpmpizlHrHDiw8TcthOVZBqOiQmfY6hbL0PC58SEUvpN+HFC20=

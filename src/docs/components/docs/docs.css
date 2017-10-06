@@ -1,0 +1,18 @@
+.section-page {
+  padding: 1rem;
+  position: relative;
+  background-color: #f7f7f9;
+}
+
+.section-btn {
+  border: 0;
+  top: 0.5rem;
+  z-index: 10;
+  right: 0.5rem;
+  font-size: 75%;
+  color: #818a91;
+  cursor: pointer;
+  position: absolute;
+  padding: 0.25rem 0.5rem;
+  background-color: transparent;
+}

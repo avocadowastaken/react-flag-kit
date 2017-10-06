@@ -1,10 +1,5 @@
 {
   "presets": [
-    "react",
-    "latest"
-  ],
-  "plugins": [
-    "transform-class-properties",
-    "transform-object-rest-spread"
+    ["./tools/babel-preset"]
   ]
 }
