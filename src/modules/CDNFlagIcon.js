@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Flag from "./internal/Flag";
 
 /**
- * Draws flag icon loaded [unpkg.com](https://unpkg.com).
+ * Draws flag icon loaded from [unpkg.com](https://unpkg.com).
  *
  * Usage:
  * ```javascript
