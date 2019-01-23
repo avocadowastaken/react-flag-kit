@@ -5,6 +5,13 @@
   "main": "index.js",
   "module": "index.es.js",
   "es2015": "index.es2015.js",
+  "files": [
+    "assets/**",
+    "typings/**",
+    "index.js",
+    "index.es.js",
+    "index.es2015.js"
+  ],
   "homepage": "https://umidbekkarimov.github.io/react-flag-kit",
   "repository": "https://github.com/umidbekkarimov/react-flag-kit.git",
   "author": "Umidbek Karimov <uma.karimov@gmail.com>",
