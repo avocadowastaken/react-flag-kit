@@ -1,28 +1,7 @@
 {
-  "env": { "jest": true, "browser": true },
-  "parser": "babel-eslint",
-  "plugins": ["prettier"],
-  "extends": ["airbnb", "prettier", "prettier/react"],
+  "root": true,
+  "extends": "@dc0de/eslint-config-node",
   "rules": {
-    "no-use-before-define": ["error", "nofunc"],
-    "no-return-assign": "off",
-    "no-nested-ternary": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "all"
-      }
-    ],
-    "react/forbid-prop-types": "off",
-    "react/no-unused-prop-types": "off",
-    "react/require-default-props": "off",
-    "react/jsx-filename-extension": "off",
-    "import/prefer-default-export": "off",
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "peerDependencies": false
-      }
-    ]
+    "node/no-unpublished-require": "off"
   }
 }

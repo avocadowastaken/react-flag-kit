@@ -1,6 +1,0 @@
-{
-  "rules": {
-    "react/no-array-index-key": "off",
-    "import/no-extraneous-dependencies": "off"
-  }
-}
