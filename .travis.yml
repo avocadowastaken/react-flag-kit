@@ -24,6 +24,7 @@ deploy:
       secure: $NPM_TOKEN
     on:
       tags: true
+      node_js: "10"
       branch: master
       repo: umidbekkarimov/react-flag-kit
 
@@ -32,5 +33,6 @@ deploy:
     github_token: $GITHUB_TOKEN
     local_dir: build
     on:
+      node_js: "10"
       branch: master
       repo: umidbekkarimov/react-flag-kit
