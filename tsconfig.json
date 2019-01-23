@@ -1,0 +1,31 @@
+{
+  // Setup source directory.
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "compilerOptions": {
+    // Do not compile code.
+    "noEmit": true,
+
+    // Enable JSX.
+    "jsx": "react",
+
+    // Enable JSON
+    "resolveJsonModule": true,
+
+    // Use dom and latest ES typings.
+    "lib": ["dom", "es2018"],
+
+    // Use synthetic es modules.
+    "allowSyntheticDefaultImports": true,
+
+    // Strict type checks.
+    "strict": true,
+
+    // Dead code checks.
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Possible bug checks.
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

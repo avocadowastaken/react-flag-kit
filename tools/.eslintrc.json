@@ -1,6 +1,0 @@
-{
-  "env": { "browser": false },
-  "rules": {
-    "no-console": "off"
-  }
-}

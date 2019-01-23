@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "./package.json",
+    "**/__docs__/**/*.ts",
+    "**/__docs__/**/*.tsx",
+    "**/__tests__/**/*.ts",
+    "**/__tests__/**/*.tsx",
+    "**/__testutils__/**/*.ts",
+    "**/__testutils__/**/*.tsx"
+  ],
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "declarationDir": "typings",
+    "emitDeclarationOnly": true
+  }
+}
