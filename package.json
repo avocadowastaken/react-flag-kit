@@ -5,6 +5,7 @@
   "main": "index.js",
   "module": "index.es.js",
   "es2015": "index.es2015.js",
+  "typings": "typings/index.d.ts",
   "files": [
     "assets/**",
     "typings/**",
@@ -27,7 +28,7 @@
     "build": "yarn build:bundle && yarn build:typings && yarn build:docs",
     "build:docs": "docz build",
     "build:bundle": "rollup -c rollup.config.js",
-    "build:typings": "rimraf typings && tsc --project tsconfig.typings.json"
+    "build:typings": "node scripts/build-typings.js"
   },
   "peerDependencies": {
     "react": "^16.6.0"
@@ -60,12 +61,12 @@
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-react": "^7.11.0",
     "eslint-plugin-react-hooks": "^0.0.0",
+    "fs-jetpack": "^2.2.1",
     "import-sort": "^5.2.0",
     "import-sort-parser-typescript": "^5.0.0",
     "jest": "^23.0.0",
     "jest-circus": "^23.6.0",
     "prettier": "^1.15.0",
-    "rimraf": "^2.6.3",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-json": "^3.1.0",
