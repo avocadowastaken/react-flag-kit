@@ -50,7 +50,7 @@ function createConfig(target, file) {
         ],
       }),
 
-      sizeSnapshot({ matchSnapshot: process.env.CI === "true" }),
+      sizeSnapshot({ threshold: 5, matchSnapshot: process.env.CI === "true" }),
     ],
   };
 }
