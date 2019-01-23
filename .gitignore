@@ -3,7 +3,6 @@
 /docs
 
 # Testing
-
 /coverage
 
 # Distributive
@@ -14,3 +13,6 @@
 
 # Dependencies
 node_modules/
+
+# Logs
+*.log
