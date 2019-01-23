@@ -28,7 +28,7 @@ deploy:
     api_key:
       secure: $NPM_TOKEN
     on:
-      tags: true
+      tags: false
       node_js: "10"
       branch: master
       repo: umidbekkarimov/react-flag-kit
