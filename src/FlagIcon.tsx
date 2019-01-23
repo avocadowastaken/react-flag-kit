@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, ReactElement } from "react";
 
 import { name, version } from "../package.json";
 
@@ -278,7 +278,12 @@ export interface FlagIconProps {
   readonly style?: CSSProperties;
 }
 
-export function FlagIcon({ code, style, size = 24, ...props }: FlagIconProps) {
+export function FlagIcon({
+  code,
+  style,
+  size = 24,
+  ...props
+}: FlagIconProps): ReactElement<FlagIconProps> {
   return (
     <img
       {...props}

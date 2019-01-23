@@ -1,4 +1,5 @@
 {
   "root": true,
-  "extends": "@dc0de/eslint-config-react"
+  "extends": "@dc0de/eslint-config-react",
+  "parserOptions": { "project": "./tsconfig.json" }
 }
