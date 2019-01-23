@@ -36,7 +36,7 @@ import FlagIcon from 'react-flag-kit/lib/CDNFlagIcon.js';
 export default () => <FlagIcon code="WW" size={48} />
 ```
 
-More advanced examples you can find in [storybook](https://umidbekkarimov.github.io/react-flag-kit).
+More advanced examples you can find in [docs](https://umidbekkarimov.github.io/react-flag-kit).
 
 ### Reference
 
