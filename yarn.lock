@@ -810,25 +810,25 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@dc0de/eslint-config-base@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@dc0de/eslint-config-base/-/eslint-config-base-0.5.0.tgz#af2b6661451ce4d47c5be3206cece48835e45acc"
-  integrity sha512-+HKVRNFeNC9LrNa88tNWzk9y3CEKimDhIblXewJFToaTuQlrxpXSE27qGQmna2ZDbrHjQXbXBnptsCKVwqsxnw==
+"@dc0de/eslint-config-base@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@dc0de/eslint-config-base/-/eslint-config-base-0.5.1.tgz#f02f7b65d431112126d4b48a0d36f625785d1d2a"
+  integrity sha512-4VoF1TZjs644OfgCq71DMWq6H5Z+VkG69ufjhO1py+VgxGs+4Lz7MlAe0402CPjMR9EkStXnH1/EsQnJkGFJpA==
 
-"@dc0de/eslint-config-node@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@dc0de/eslint-config-node/-/eslint-config-node-0.5.0.tgz#5d73aec52ca52f3d15119b461709ab0cda39d1a1"
-  integrity sha512-yfYDuGaHLFX3Hee0DtgvkB9RYJTlb2IOUZXSXoGvoUAnbAoaLFXuZvGLBHgEvjqGVMj8drISFAwoCmzGo92Fdw==
+"@dc0de/eslint-config-node@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@dc0de/eslint-config-node/-/eslint-config-node-0.5.1.tgz#83c3e006e01f4a14199884045dcbfd646f465588"
+  integrity sha512-ZFa/Y+4fd50+idya3r02OJrAnGcJb4ZPRizx8HKktbTh8gbk7S+qAU167fD91R8Fi9RuSiVbXVI6aV/muIYdWg==
 
-"@dc0de/eslint-config-react@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@dc0de/eslint-config-react/-/eslint-config-react-0.5.2.tgz#4d22289569fc79c27e6feae672ac14dd9cc078cb"
-  integrity sha512-mhX9+kyCLs5FqdxafGIowhxGlRQNzV2Hrl6wTjXOKoAritIyt4bCq1wdGz27QaCXFVndrSK740gIa7NLZE7JeQ==
+"@dc0de/eslint-config-react@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@dc0de/eslint-config-react/-/eslint-config-react-0.5.3.tgz#1c32f8ad7619b11f68ce0a61ab8620a8574f66a4"
+  integrity sha512-NghAplHl+A2D17yo1+6yPJu1PTjWDQb9r2Qq7M6iCzolWb7bJY15lseGv1JyCIHf0tuufyEGq9rL4L7/T7PV1A==
 
-"@dc0de/eslint-config@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@dc0de/eslint-config/-/eslint-config-0.5.0.tgz#22f79854d8ea81521584f6a1b54b4f2f1feba38b"
-  integrity sha512-NWT0sTxSto89AD43MFqRHk67Bal5JodgT4cxxmmbSQL/fx0dKy9t7NvmhwfQPuoM+s5OMFIMl40mmnF5J9vvBA==
+"@dc0de/eslint-config@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@dc0de/eslint-config/-/eslint-config-0.5.1.tgz#08141a75377dccd1bbd9ecb05a996245153c39ab"
+  integrity sha512-azwHRv3thAB8fl55FyBmQpo5pQyVUifrFHoRuYxnBQOsJJqnTEdbpS4wxqTVmCW04hP+3VSjJRQqcmlU38vm/g==
 
 "@dc0de/jest-preset@^0.0.8":
   version "0.0.8"
