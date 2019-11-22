@@ -19,6 +19,7 @@ script:
   - yarn tsc
   - yarn lint
   - yarn build
+  - yarn build:docs
 
 branches:
   except:
