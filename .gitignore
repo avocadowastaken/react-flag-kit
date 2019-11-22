@@ -7,6 +7,7 @@ package-lock.json
 /pkg
 
 # Docs
+/docs
 /.docz
 
 # Logs
