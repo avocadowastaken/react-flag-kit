@@ -8,6 +8,9 @@ node_js:
   - "11"
   - "12"
 
+install:
+  - yarn install
+
 script:
   - yarn tsc
   - yarn lint
