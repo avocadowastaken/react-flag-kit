@@ -1,7 +1,5 @@
 import React, { CSSProperties, ReactElement } from "react";
 
-import { name, version } from "../package.json";
-
 export type FlagIconCode =
   | "AD"
   | "AE"
@@ -288,7 +286,7 @@ export function FlagIcon({
     <img
       {...props}
       alt={code}
-      src={`https://unpkg.com/${name}@${version}/assets/${code}.svg`}
+      src={`https://unpkg.com/react-flag-kit@0.3.1/assets/${code}.svg`}
       style={{
         ...style,
         height: `${size}px`,

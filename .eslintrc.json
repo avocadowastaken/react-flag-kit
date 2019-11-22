@@ -1,7 +1,39 @@
 {
   "root": true,
-  "extends": "@dc0de/eslint-config-node",
-  "rules": {
-    "node/no-unpublished-require": "off"
-  }
+  "settings": {
+    "react": { "version": "detect" }
+  },
+  "overrides": [
+    { "files": "*.js", "extends": "plugin:@superdispatch/node" },
+    {
+      "files": "*.{ts,tsx}",
+      "extends": [
+        "plugin:@superdispatch/react",
+        "plugin:@superdispatch/typescript"
+      ],
+      "rules": {
+        "react-hooks/exhaustive-deps": [
+          "error",
+          { "additionalHooks": "^(useMemoWith|usePromise)$" }
+        ]
+      }
+    },
+    {
+      "files": "**/__tests__/**/*.{ts,tsx}",
+      "extends": "plugin:@superdispatch/jest",
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    },
+    {
+      "files": "*",
+      "rules": {
+        "quotes": [
+          "error",
+          "double",
+          { "avoidEscape": true, "allowTemplateLiterals": false }
+        ]
+      }
+    }
+  ]
 }

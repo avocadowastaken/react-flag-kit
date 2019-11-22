@@ -2,77 +2,72 @@
   "name": "react-flag-kit",
   "version": "0.3.1",
   "description": "FlagKit for React",
-  "main": "index.js",
-  "module": "index.es.js",
-  "es2015": "index.es2015.js",
-  "typings": "typings/index.d.ts",
-  "files": [
-    "assets/**",
-    "typings/**",
-    "index.js",
-    "index.es.js",
-    "index.es2015.js"
-  ],
   "homepage": "https://umidbekkarimov.github.io/react-flag-kit",
   "repository": "https://github.com/umidbekkarimov/react-flag-kit.git",
-  "author": "Umidbek Karimov <uma.karimov@gmail.com>",
   "license": "MIT",
+  "author": "Umidbek Karimov <uma.karimov@gmail.com>",
   "scripts": {
-    "ci": "yarn lint && yarn tsc && yarn cover --ci --runInBand",
-    "ci-fix": "yarn lint --fix && yarn tsc && yarn cover",
-    "lint": "stylotron lint",
-    "test": "jest --watch",
-    "cover": "jest --coverage",
-    "codecov": "codecov -f ./coverage/lcov.info",
-    "start": "docz dev",
-    "build": "yarn build:bundle && yarn build:typings && yarn build:docs",
-    "build:docs": "docz build",
-    "build:bundle": "rollup -c rollup.config.js",
-    "build:typings": "node scripts/build-typings.js"
+    "build": "npx pika build",
+    "prebump": "npm run lint && npx tsc && npm run build",
+    "bump": "npx pika publish --no-publish",
+    "lint": "js-tools lint",
+    "version": "npm run build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@pika/cli": "^0.2.0",
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.7.1",
+    "@pika/plugin-build-types": "^0.7.1",
+    "@pika/plugin-build-web": "^0.7.1",
+    "@pika/plugin-standard-pkg": "^0.7.1",
+    "@superdispatch/eslint-plugin": "^0.1.25",
+    "@superdispatch/js-tools": "^0.1.24",
+    "@superdispatch/prettier-config": "^0.1.13",
+    "@superdispatch/tsconfig": "^0.1.13",
+    "@types/jest": "^24.0.23",
+    "@types/react": "^16.7.20",
+    "docz": "^1.3.2",
+    "docz-theme-default": "^1.2.0",
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.15.0",
+    "typescript": "~3.7.2"
   },
   "peerDependencies": {
     "react": "^16.6.0"
   },
-  "devDependencies": {
-    "@babel/core": "^7.0.0-0",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/preset-typescript": "^7.1.0",
-    "@dc0de/eslint-config": "^0.5.1",
-    "@dc0de/eslint-config-base": "^0.5.1",
-    "@dc0de/eslint-config-node": "^0.5.1",
-    "@dc0de/eslint-config-react": "^0.5.3",
-    "@dc0de/jest-preset": "^0.0.8",
-    "@types/jest": "^23.3.13",
-    "@types/react": "^16.7.20",
-    "@typescript-eslint/eslint-plugin": "^1.1.0",
-    "@typescript-eslint/parser": "^1.1.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
-    "docz": "^0.13.7",
-    "docz-theme-default": "^0.13.7",
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-import-resolver-typescript": "^1.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-react": "^7.11.0",
-    "eslint-plugin-react-hooks": "^0.0.0",
-    "fs-jetpack": "^2.2.1",
-    "import-sort": "^5.2.0",
-    "import-sort-parser-typescript": "^5.0.0",
-    "jest": "^23.0.0",
-    "jest-circus": "^23.6.0",
-    "prettier": "^1.15.0",
-    "rollup": "^1.1.2",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-json": "^3.1.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-size-snapshot": "^0.8.0",
-    "stylotron": "^0.0.13",
-    "typescript": "~3.2.1"
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__docs__/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-types",
+        {
+          "tsconfig": "./tsconfig.types.json"
+        }
+      ]
+    ]
   }
 }
