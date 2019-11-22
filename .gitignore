@@ -1,18 +1,13 @@
-# Docs
-/.docz
-/docs
+# Dependencies
+node_modules/
+yarn.lock
+package-lock.json
+
+# Distributive
+/pkg
 
 # Testing
 /coverage
-
-# Distributive
-/typings
-/index.js
-/index.es.js
-/index.es2015.js
-
-# Dependencies
-node_modules/
 
 # Logs
 *.log
