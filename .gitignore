@@ -6,8 +6,8 @@ package-lock.json
 # Distributive
 /pkg
 
-# Testing
-/coverage
+# Docs
+/.docz
 
 # Logs
 *.log

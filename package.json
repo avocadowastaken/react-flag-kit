@@ -8,9 +8,11 @@
   "author": "Umidbek Karimov <uma.karimov@gmail.com>",
   "scripts": {
     "build": "npx pika build",
+    "build:docs": "docz build",
     "prebump": "npm run lint && npx tsc && npm run build",
     "bump": "npx pika publish --no-publish",
     "lint": "js-tools lint",
+    "start": "docz dev",
     "version": "npm run build"
   },
   "dependencies": {

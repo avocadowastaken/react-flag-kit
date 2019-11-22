@@ -1,4 +1,4 @@
-import React, { CSSProperties, ReactElement } from "react";
+import React, { ImgHTMLAttributes } from "react";
 
 export type FlagIconCode =
   | "AD"
@@ -145,6 +145,7 @@ export type FlagIconCode =
   | "MC"
   | "MD"
   | "ME"
+  | "MF"
   | "MG"
   | "MH"
   | "MK"
@@ -197,16 +198,12 @@ export type FlagIconCode =
   | "RU"
   | "RW"
   | "SA"
-  | "SAMI"
   | "SB"
   | "SC"
   | "SD"
   | "SE"
-  | "SE-JAM"
-  | "SE-SKA"
-  | "SE-VAS"
-  | "SEFI"
   | "SG"
+  | "SH"
   | "SI"
   | "SJ"
   | "SK"
@@ -232,7 +229,6 @@ export type FlagIconCode =
   | "TM"
   | "TN"
   | "TO"
-  | "TORN"
   | "TR"
   | "TT"
   | "TV"
@@ -254,13 +250,6 @@ export type FlagIconCode =
   | "VU"
   | "WF"
   | "WS"
-  | "WW"
-  | "WW-AFR"
-  | "WW-ASI"
-  | "WW-AUS"
-  | "WW-EUR"
-  | "WW-NAM"
-  | "WW-SAM"
   | "XK"
   | "YE"
   | "YT"
@@ -268,31 +257,19 @@ export type FlagIconCode =
   | "ZM"
   | "ZW";
 
-export interface FlagIconProps {
+export interface FlagIconProps extends ImgHTMLAttributes<HTMLImageElement> {
   readonly size?: number;
   readonly code: FlagIconCode;
-
-  readonly className?: string;
-  readonly style?: CSSProperties;
 }
 
-export function FlagIcon({
-  code,
-  style,
-  size = 24,
-  ...props
-}: FlagIconProps): ReactElement<FlagIconProps> {
+export function FlagIcon({ code, style, size = 24, ...props }: FlagIconProps) {
   return (
     <img
-      {...props}
       alt={code}
-      src={`https://unpkg.com/react-flag-kit@0.3.1/assets/${code}.svg`}
-      style={{
-        ...style,
-        height: `${size}px`,
-        width: `${size}px`,
-        display: "inline-block",
-      }}
+      width={size}
+      height={size}
+      {...props}
+      src={`https://cdn.jsdelivr.net/gh/madebybowtie/FlagKit@2.2/Assets/SVG/${code}.svg`}
     />
   );
 }
