@@ -18,7 +18,7 @@ yarn add react-flag-kit
 ```js
 import { FlagIcon } from "react-flag-kit";
 
-export const USAFlag = () => <FlagIcon code="USA" size={48} />;
+export const USAFlag = () => <FlagIcon code="US" size={48} />;
 ```
 
 More information you can find in [docs](https://umidbekkarimov.github.io/react-flag-kit).
