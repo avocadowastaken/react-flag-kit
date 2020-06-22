@@ -27,12 +27,6 @@ More information you can find in [docs](https://umidbekkarimov.github.io/react-f
 
 The list of available flags you can find in [FlagKit](https://github.com/madebybowtie/FlagKit#reference) repo.
 
-### Thanks
-
-[FlagKit](https://github.com/madebybowtie/FlagKit) for awesome collection of flag icons.
-
-[UNPKG](https://unpkg.com) for free and fast CDN.
-
 ### Licence
 
 MIT
