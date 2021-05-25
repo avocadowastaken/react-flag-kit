@@ -1,4 +1,9 @@
 {
   "include": ["src"],
-  "extends": "@superdispatch/tsconfig"
+  "compilerOptions": {
+    "noEmit": true,
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true
+  }
 }

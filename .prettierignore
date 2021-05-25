@@ -1,4 +1,4 @@
-pkg/
+dist/
 docs/
 .docz/
 coverage/
