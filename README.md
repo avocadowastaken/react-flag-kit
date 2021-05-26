@@ -1,10 +1,9 @@
 # [FlagKit](https://github.com/madebybowtie/FlagKit) for React
 
+[![Main](https://github.com/umidbekk/react-flag-kit/actions/workflows/main.yml/badge.svg)](https://github.com/umidbekk/react-flag-kit/actions/workflows/main.yml)
 [![npm version](https://img.shields.io/npm/v/react-flag-kit.svg)](https://npmjs.com/react-flag-kit)
 [![npm minzipped size](https://img.shields.io/bundlephobia/minzip/react-flag-kit.svg)](https://bundlephobia.com/result?p=react-flag-kit)
-[![npm type definitions](https://img.shields.io/npm/types/react-flag-kit.svg)](https://npmjs.com/react-flag-kit)
 [![npm downloads](https://img.shields.io/npm/dm/react-flag-kit.svg)](https://npmjs.com/react-flag-kit)
-[![npm license](https://img.shields.io/npm/l/react-flag-kit.svg)](https://npmjs.com/react-flag-kit)
 
 ### Installation
 
