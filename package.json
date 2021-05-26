@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "rapidbundle",
-    "prerelease": "yarn lint && yarn tsc && yarn build",
+    "prerelease": "yarn tsc && yarn build",
     "release": "np --no-2fa",
     "format": "prettier . --write"
   },
