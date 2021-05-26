@@ -258,8 +258,8 @@ export type FlagIconCode =
   | "ZW";
 
 export interface FlagIconProps extends ImgHTMLAttributes<HTMLImageElement> {
-  readonly size?: number;
-  readonly code: FlagIconCode;
+  size?: number;
+  code: FlagIconCode;
 }
 
 export function FlagIcon({ code, style, size = 24, ...props }: FlagIconProps) {

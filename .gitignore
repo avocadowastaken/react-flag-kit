@@ -4,9 +4,5 @@ node_modules/
 # Distributive
 /dist
 
-# Docs
-/docs
-/.docz
-
 # Logs
 *.log
