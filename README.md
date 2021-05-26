@@ -9,6 +9,8 @@
 ### Installation
 
 ```bash
+npm i react-flag-kit
+# or using Yarn
 yarn add react-flag-kit
 ```
 
@@ -20,11 +22,18 @@ import { FlagIcon } from "react-flag-kit";
 export const USAFlag = () => <FlagIcon code="US" size={48} />;
 ```
 
-More information you can find in [docs](https://umidbekk.github.io/react-flag-kit).
+### Props
+
+```ts
+export interface FlagIconProps extends ImgHTMLAttributes<HTMLImageElement> {
+  size?: number;
+  code: FlagIconCode;
+}
+```
 
 ### Reference
 
-The list of available flags you can find in [FlagKit](https://github.com/madebybowtie/FlagKit#reference) repo.
+The list of available flags you can find in [FlagKit](https://github.com/madebybowtie/FlagKit/blob/master/Assets/Flags.md) repo.
 
 ### Licence
 

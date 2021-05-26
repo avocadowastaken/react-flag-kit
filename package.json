@@ -2,6 +2,13 @@
   "name": "react-flag-kit",
   "version": "0.3.1",
   "description": "FlagKit for React",
+  "keywords": [
+    "react",
+    "icons",
+    "flags",
+    "flag-icons",
+    "flagkit"
+  ],
   "homepage": "https://umidbekkarimov.github.io/react-flag-kit",
   "repository": "https://github.com/umidbekkarimov/react-flag-kit.git",
   "license": "MIT",
@@ -14,28 +21,12 @@
   ],
   "scripts": {
     "build": "rapidbundle",
-    "build:docs": "docz build",
     "prerelease": "yarn lint && yarn tsc && yarn build",
     "release": "np --no-2fa",
-    "format": "prettier . --write",
-    "start": "docz dev"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.7.0"
+    "format": "prettier . --write"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.14.2",
-    "@babel/plugin-proposal-optional-chaining": "^7.14.2",
-    "@babel/plugin-transform-runtime": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/preset-typescript": "^7.1.0",
-    "@types/jest": "^26.0.23",
     "@types/react": "^17.0.8",
-    "docz": "^2.3.1",
-    "docz-theme-default": "^1.2.0",
-    "jest": "^27.0.1",
     "np": "^7.5.0",
     "prettier": "^2.3.0",
     "prettier-plugin-organize-imports": "^2.1.0",
