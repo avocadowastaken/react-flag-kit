@@ -32,7 +32,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.1.0",
     "@types/jest": "^26.0.23",
-    "@types/react": "^17.0.7",
+    "@types/react": "^17.0.8",
     "docz": "^2.3.1",
     "docz-theme-default": "^1.2.0",
     "jest": "^27.0.1",
