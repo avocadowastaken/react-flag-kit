@@ -9,8 +9,7 @@
     "flag-icons",
     "flagkit"
   ],
-  "homepage": "https://umidbekkarimov.github.io/react-flag-kit",
-  "repository": "https://github.com/umidbekkarimov/react-flag-kit.git",
+  "repository": "https://github.com/umidbekk/react-flag-kit.git",
   "license": "MIT",
   "author": "Umidbek Karimov <uma.karimov@gmail.com>",
   "main": "dist/index.cjs",
