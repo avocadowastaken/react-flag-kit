@@ -25,15 +25,15 @@
     "format": "prettier . --write"
   },
   "devDependencies": {
-    "@types/react": "^17.0.8",
-    "np": "^7.5.0",
-    "prettier": "^2.3.0",
-    "prettier-plugin-organize-imports": "^2.1.0",
-    "prettier-plugin-packagejson": "^2.2.11",
-    "rapidbundle": "^0.12.0",
-    "typescript": "~4.3.5"
+    "@types/react": "17.0.18",
+    "np": "7.5.0",
+    "prettier": "2.3.2",
+    "prettier-plugin-organize-imports": "2.3.3",
+    "prettier-plugin-packagejson": "2.2.11",
+    "rapidbundle": "0.12.0",
+    "typescript": "4.3.5"
   },
   "peerDependencies": {
-    "react": "^16.6.0"
+    "react": "^16.6.0 || ^17.0.0"
   }
 }
