@@ -339,7 +339,7 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react@^17.0.8":
+"@types/react@17.0.18":
   version "17.0.18"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.18.tgz#4109cbbd901be9582e5e39e3d77acd7b66bb7fbe"
   integrity sha512-YTLgu7oS5zvSqq49X5Iue5oAbVGhgPc5Au29SJC4VeE17V6gASoOxVkUDy9pXFMRFxCWCD9fLeweNFizo3UzOg==
@@ -1931,7 +1931,7 @@ normalize-url@^4.1.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.1.tgz#0dd90cf1288ee1d1313b87081c9a5932ee48518a"
   integrity sha512-9UZCFRHQdNrfTpGg8+1INIg93B6zE0aXMVFkw1WFwvO4SlZywU6aLg5Of0Ap/PgcbSw4LNxvMWXMeugwMCX0AA==
 
-np@^7.5.0:
+np@7.5.0:
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/np/-/np-7.5.0.tgz#03e3f8fb77ff0b8718dfd54b76cbd3c0f383a221"
   integrity sha512-CdpgqtO6JpDKJjQ2gueY0jnbz6APWA9wFXSwPv5bXg4seSBibHqQ8JyWxYlS8YRfVbpeDtj582wcAWTlfy5qNA==
@@ -2234,19 +2234,19 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
-prettier-plugin-organize-imports@^2.1.0:
+prettier-plugin-organize-imports@2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/prettier-plugin-organize-imports/-/prettier-plugin-organize-imports-2.3.3.tgz#6877bcf8ca02569198d8f419c954a0d90a95de15"
   integrity sha512-PBOwQ8vEIB2b7B3gCuBG7D+dqsr1fsTR4TSAjNacRVdHJrD0yzgz9grOLPSyfwJm+NUTZLyWeHoZ+1mHaUrk+g==
 
-prettier-plugin-packagejson@^2.2.11:
+prettier-plugin-packagejson@2.2.11:
   version "2.2.11"
   resolved "https://registry.yarnpkg.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.2.11.tgz#640b6301da3a58c489889b3d315255e18153daf0"
   integrity sha512-oJCBCEkHIKScEv6qNQC47S39NXlevbzwvoJE3gflmBB8/3BEsC6ZRi+hwFVajw32b4tDI9hFXPIzmVd/T8Rm9w==
   dependencies:
     sort-package-json "1.50.0"
 
-prettier@^2.3.0:
+prettier@2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.2.tgz#ef280a05ec253712e486233db5c6f23441e7342d"
   integrity sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==
@@ -2276,7 +2276,7 @@ quick-lru@^4.0.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-4.0.1.tgz#5b8878f113a58217848c6482026c73e1ba57727f"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
-rapidbundle@^0.12.0:
+rapidbundle@0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/rapidbundle/-/rapidbundle-0.12.0.tgz#4d9c5a63bbc5b7d6551442a15e9b70c7404456b7"
   integrity sha512-E3xUuAXRZQ2o4P7INyNkIuTcUmM2p8N6hJXHJE46qn4gc3HyoYzxCjx6T87K83la0j5hb37p+85TglgFWRUoxg==
@@ -2801,7 +2801,7 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.3.5, typescript@~4.3.5:
+typescript@4.3.5, typescript@^4.3.5:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
   integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
