@@ -18,5 +18,5 @@ jobs:
       - uses: umidbekk/actions/npm/install@v1
 
       - run: yarn tsc
-      - run: yarn format --check
+      - run: yarn format --check --no-write
       - run: yarn build
