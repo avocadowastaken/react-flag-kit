@@ -1,7 +1,7 @@
 {
   "extends": ["config:js-lib", "group:all"],
   "lockFileMaintenance": { "enabled": true, "automerge": true },
-  "postUpdateOptions": ["npmDedupe"],
+  "postUpdateOptions": ["yarnDedupeHighest"],
   "packageRules": [
     {
       "automerge": true,
