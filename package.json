@@ -20,17 +20,37 @@
   ],
   "scripts": {
     "build": "rapidbundle",
-    "prerelease": "yarn tsc && yarn build",
+    "test": "jest",
+    "tdd": "jest --watch",
+    "prerelease": "yarn tsc && yarn format && yarn build",
     "release": "np --no-2fa",
     "format": "prettier . --write"
   },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.tsx?$": [
+        "esbuild-jest",
+        {
+          "sourcemap": true
+        }
+      ]
+    }
+  },
   "devDependencies": {
+    "@testing-library/react": "^12.0.0",
+    "@types/jest": "27.0.1",
     "@types/react": "17.0.19",
+    "@types/react-dom": "17.0.9",
+    "esbuild-jest": "0.5.0",
+    "jest": "27.1.0",
     "np": "7.5.0",
     "prettier": "2.3.2",
     "prettier-plugin-organize-imports": "2.3.3",
     "prettier-plugin-packagejson": "2.2.11",
     "rapidbundle": "0.12.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "typescript": "4.3.5"
   },
   "peerDependencies": {

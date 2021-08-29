@@ -262,7 +262,7 @@ export interface FlagIconProps extends ImgHTMLAttributes<HTMLImageElement> {
   code: FlagIconCode;
 }
 
-export function FlagIcon({ code, style, size = 24, ...props }: FlagIconProps) {
+export function FlagIcon({ code, size = 24, ...props }: FlagIconProps) {
   return (
     <img
       alt={code}
