@@ -22,9 +22,9 @@
     "build": "rapidbundle",
     "test": "jest",
     "tdd": "jest --watch",
-    "prerelease": "yarn tsc && yarn format && yarn build",
+    "prerelease": "npx tsc && npm run format && npm run build",
     "release": "np --no-2fa",
-    "format": "prettier . --write"
+    "format": "prettier . --check --write"
   },
   "jest": {
     "testEnvironment": "jsdom",
@@ -55,5 +55,8 @@
   },
   "peerDependencies": {
     "react": "^16.6.0 || ^17.0.0"
+  },
+  "engines": {
+    "npm": ">=7"
   }
 }

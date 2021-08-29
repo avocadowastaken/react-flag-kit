@@ -7,5 +7,5 @@
     ":dependencyDashboard",
     ":maintainLockFilesWeekly"
   ],
-  "postUpdateOptions": ["yarnDedupeHighest"]
+  "postUpdateOptions": ["npmDedupe"]
 }
