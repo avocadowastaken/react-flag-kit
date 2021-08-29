@@ -1,4 +1,4 @@
-import React, { ImgHTMLAttributes } from "react";
+import React, { forwardRef, ImgHTMLAttributes } from "react";
 
 export type FlagIconCode =
   | "AD"
@@ -262,14 +262,20 @@ export interface FlagIconProps extends ImgHTMLAttributes<HTMLImageElement> {
   code: FlagIconCode;
 }
 
-export function FlagIcon({ code, size = 24, ...props }: FlagIconProps) {
-  return (
+export const FlagIcon = forwardRef<HTMLImageElement, FlagIconProps>(
+  (
+    { code, alt = code, size = 24, width = size, height = size, ...props },
+    ref
+  ) => (
     <img
-      alt={code}
-      width={size}
-      height={size}
       {...props}
+      ref={ref}
+      alt={alt}
+      width={width}
+      height={height}
       src={`https://cdn.jsdelivr.net/gh/madebybowtie/FlagKit@2.2/Assets/SVG/${code}.svg`}
     />
-  );
-}
+  )
+);
+
+FlagIcon.displayName = "FlagIcon";

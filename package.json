@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "rapidbundle",
-    "test": "jest",
+    "test": "jest --coverage",
     "tdd": "jest --watch",
     "prerelease": "npx tsc && npm run format && npm run build",
     "release": "np --no-2fa",

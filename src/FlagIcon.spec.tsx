@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import React from "react";
+import React, { createRef } from "react";
 import { FlagIcon } from "./FlagIcon";
 
 test("basic", () => {
@@ -15,6 +15,25 @@ test("basic", () => {
 `);
 });
 
+test("ref", () => {
+  const ref = createRef<HTMLImageElement>();
+  render(<FlagIcon ref={ref} code="US" />);
+  expect(screen.getByRole("img")).toBe(ref.current);
+});
+
+test("alt", () => {
+  render(<FlagIcon code="US" size={64} alt="USA" />);
+
+  expect(screen.getByRole("img")).toMatchInlineSnapshot(`
+<img
+  alt="USA"
+  height="64"
+  src="https://cdn.jsdelivr.net/gh/madebybowtie/FlagKit@2.2/Assets/SVG/US.svg"
+  width="64"
+/>
+`);
+});
+
 test("size", () => {
   render(<FlagIcon code="US" size={64} />);
 
@@ -22,6 +41,32 @@ test("size", () => {
 <img
   alt="US"
   height="64"
+  src="https://cdn.jsdelivr.net/gh/madebybowtie/FlagKit@2.2/Assets/SVG/US.svg"
+  width="64"
+/>
+`);
+});
+
+test("width", () => {
+  render(<FlagIcon code="US" size={64} width={128} />);
+
+  expect(screen.getByRole("img")).toMatchInlineSnapshot(`
+<img
+  alt="US"
+  height="64"
+  src="https://cdn.jsdelivr.net/gh/madebybowtie/FlagKit@2.2/Assets/SVG/US.svg"
+  width="128"
+/>
+`);
+});
+
+test("height", () => {
+  render(<FlagIcon code="US" size={64} height={128} />);
+
+  expect(screen.getByRole("img")).toMatchInlineSnapshot(`
+<img
+  alt="US"
+  height="128"
   src="https://cdn.jsdelivr.net/gh/madebybowtie/FlagKit@2.2/Assets/SVG/US.svg"
   width="64"
 />
