@@ -13,14 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: styfle/cancel-workflow-action@0.9.1
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: umidbekk/actions/prepare-node-repo@v2
         with:
-          cache: "npm"
           node-version: "14"
 
-      - run: npm ci
       - run: npx tsc
       - run: npm run format -- --no-write
       - run: npm test
