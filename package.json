@@ -15,13 +15,15 @@
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "rapidbundle",
     "format": "prettier . --check --write",
-    "prerelease": "npx tsc && npm run format && npm run build",
+    "prerelease": "npx tsc && npm run format",
+    "version": "npm run build",
     "release": "np --no-2fa",
     "tdd": "jest --watch",
     "test": "jest --coverage"
@@ -42,6 +44,7 @@
     "@types/jest": "27.4.1",
     "@types/react": "18.0.6",
     "@types/react-dom": "18.0.2",
+    "@umidbekk/configs": "^0.1.0",
     "esbuild-jest": "0.5.0",
     "jest": "27.5.1",
     "np": "7.6.1",

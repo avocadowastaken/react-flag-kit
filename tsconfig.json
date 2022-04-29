@@ -1,9 +1,7 @@
 {
-  "include": ["src"],
+  "extends": "@umidbekk/configs/tsconfig.json",
+  "include": ["src", "scripts"],
   "compilerOptions": {
-    "noEmit": true,
-    "strict": true,
-    "jsx": "preserve",
-    "esModuleInterop": true
+    "resolveJsonModule": true
   }
 }
