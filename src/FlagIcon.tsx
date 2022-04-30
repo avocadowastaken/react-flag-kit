@@ -1,5 +1,4 @@
 import React, { forwardRef, ImgHTMLAttributes } from "react";
-import { version } from "../package.json";
 
 export type FlagIconCode =
   | "AD"
@@ -274,7 +273,7 @@ export const FlagIcon = forwardRef<HTMLImageElement, FlagIconProps>(
       alt={alt}
       width={width}
       height={height}
-      src={`https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@${version}/assets/${code}.svg`}
+      src={`https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1/assets/${code}.svg`}
     />
   )
 );

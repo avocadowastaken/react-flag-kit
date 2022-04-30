@@ -9,7 +9,7 @@ test("basic", () => {
     <img
       alt="US"
       height="24"
-      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1.0.0/assets/US.svg"
+      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1/assets/US.svg"
       width="24"
     />
   `);
@@ -28,7 +28,7 @@ test("alt", () => {
     <img
       alt="USA"
       height="64"
-      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1.0.0/assets/US.svg"
+      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1/assets/US.svg"
       width="64"
     />
   `);
@@ -41,7 +41,7 @@ test("size", () => {
     <img
       alt="US"
       height="64"
-      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1.0.0/assets/US.svg"
+      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1/assets/US.svg"
       width="64"
     />
   `);
@@ -54,7 +54,7 @@ test("width", () => {
     <img
       alt="US"
       height="64"
-      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1.0.0/assets/US.svg"
+      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1/assets/US.svg"
       width="128"
     />
   `);
@@ -67,7 +67,7 @@ test("height", () => {
     <img
       alt="US"
       height="128"
-      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1.0.0/assets/US.svg"
+      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1/assets/US.svg"
       width="64"
     />
   `);
@@ -81,7 +81,7 @@ test("style", () => {
     <img
       alt="US"
       height="24"
-      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1.0.0/assets/US.svg"
+      src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1/assets/US.svg"
       style="margin: .5em;"
       width="24"
     />
